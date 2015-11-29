@@ -146,34 +146,7 @@ public class HolidaysFragment extends android.support.v4.app.Fragment
         Activity parentActivity = getActivity();
         NotificationManager NM;
         Notification.Builder notifyHoliday;
-
-//        if ((holiday = holidayDatesMap.get(currentDay)) != null && (holiday =
-//                holidayDatesMap.get(currentDay)).isEmpty())
-//        {
-//            // todo push notification for holiday
-//            NM = (NotificationManager) parentActivity.getSystemService
-//                    (Context.NOTIFICATION_SERVICE);
-//            notifyHoliday = new Notification(R.drawable.action_bar_icon,
-//                    "Today is" + holiday + "!", System.currentTimeMillis());
-//            Intent notificationIntent = new Intent(this.getContext(),NotificationView.class);
-//            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,notificationIntent, 0);
-//            notifyHoliday = new Notification.Builder(this.getContext())
-//                    .setContentTitle("Today is" + holiday + "!");
-//        }
     }
-
-//    private void Notify(String notificationTitle, String notificationMessage){
-//        Activity parentActivity = getActivity();
-//        NotificationManager notificationManager = (NotificationManager) parentActivity.getSystemService(Context.NOTIFICATION_SERVICE);
-//        @SuppressWarnings("deprecation")
-//
-//        Notification notification = new Notification(R.drawable.action_bar_icon,"New Message", System.currentTimeMillis());
-//        Intent notificationIntent = new Intent(this.getContext() ,NotificationView.class);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this.getContext(), 0,notificationIntent, 0);
-//
-//        notification.setLatestEventInfo(HolidaysFragment.this, notificationTitle,notificationMessage, pendingIntent);
-//        notificationManager.notify(9999, notification);
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

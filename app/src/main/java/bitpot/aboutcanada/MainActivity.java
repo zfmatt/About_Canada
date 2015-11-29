@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity
         FinanceFragment.OnFragmentInteractionListener,
         LandmarksFragment.OnFragmentInteractionListener
 {
-
     /**
      * Fragment managing the behaviors, interactions and presentation of the
      * navigation drawer.
@@ -251,8 +251,14 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
+        Log.d("1YEY ", "" + item.getItemId());
+        Log.d("1YEY ", "" + R.drawable.action_bar_icon);
+        if (item.getItemId() == R.drawable.action_bar_icon)
+        {
+            MediaPlayer mp = MediaPlayer.create(this.getBaseContext(), R.raw.ocanada);
+            mp.start();
+        }
 
         return super.onOptionsItemSelected(item);
     }

@@ -18,3 +18,13 @@ H--Canada Territories:
 P--Nunavut
 P--Northwest Territories
 P--Yukon
+
+H--National Winter Sport
+P--Ice hockey
+
+H--National Summer Sport
+P--Lacrosse
+
+H--National Animals
+P--The Beaver
+P--National Horse of Canada

@@ -30,9 +30,8 @@ public class MainActivity extends AppCompatActivity
         HomeFragment.OnFragmentInteractionListener,
         HolidaysFragment.OnFragmentInteractionListener,
         FinanceFragment.OnFragmentInteractionListener,
-        LandmarksFragment.OnFragmentInteractionListener,
-        CanadaFragment.OnFragmentInteractionListener
-{ 
+        LandmarksFragment.OnFragmentInteractionListener
+{
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the
@@ -218,12 +217,6 @@ public class MainActivity extends AppCompatActivity
                 break;
             case 7:
                 mTitle = getString(R.string.title_section7);
-                break;
-            case 8:
-                mTitle = getString(R.string.title_section8);
-                break;
-            case 9:
-                mTitle = getString(R.string.title_section9);
                 break;
         }
     }

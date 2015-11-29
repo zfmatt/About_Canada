@@ -1,43 +1,38 @@
 
 
 
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" tools:context="bitpot.aboutcanada.AboutCitiesFragment"
+    android:id ="@+id/transLay"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|top">
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinnerLang"
-        android:layout_gravity="center_horizontal"/>
-        </TableRow>
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:gravity="center">
+
+
         <LinearLayout
             android:id ="@+id/transLinLay"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical" >
-
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerLang"
+                android:layout_gravity="center_horizontal"
+                android:layout_column="4"
+                android:paddingBottom="15sp"
+                android:paddingTop="15sp"
+                />
 
         </LinearLayout>
     </ScrollView>
 
-        </TableRow>
-
-</TableLayout>
+</RelativeLayout>

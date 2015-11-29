@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
 
-        Log.d("1YEY ", "" + item.getItemId());
+        Log.d("11YEY ", "" + item.getItemId());
         Log.d("1YEY ", "" + R.drawable.action_bar_icon);
         if (item.getItemId() == R.drawable.action_bar_icon)
         {
